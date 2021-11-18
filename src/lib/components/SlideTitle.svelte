@@ -3,5 +3,5 @@
 </script>
 
 {#if $slideTitle.length}
-	<h2 absolute bottom-2 left-2 m-0>{$slideTitle.replace('%I', $slideIndex + 1 + ' |')}</h2>
+	<p absolute bottom-4 left-4 m-0>{$slideTitle.replace('%I', $slideIndex + 1 + ' |')}</p>
 {/if}

@@ -15,6 +15,8 @@ if (browser) {
 
 export const slideAmount = writable(0);
 
+export const showBackground = writable(true);
+
 export const slideTitle = writable("")
 
 export const nextSlide = () => slideIndex.update((index) => Math.min(get(slideAmount) - 1, index + 1));

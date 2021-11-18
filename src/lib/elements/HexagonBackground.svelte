@@ -39,8 +39,8 @@
 		bottom: 0vw;
 		transform-origin: center center;
 		transition: transform 3s ease;
-		transform: rotate3d(calc(var(--x) + 11), calc(var(--y) - 11), calc(var(--y) + 2), 39deg)
-			scale(1.5);
+		transform: perspective(80px)
+			rotate3d(calc(var(--x) + 11), calc(var(--y) - 11), calc(var(--y) + 2), 5deg) scale(1.5);
 	}
 
 	@keyframes wobble {

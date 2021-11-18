@@ -31,7 +31,7 @@
 		transition:scale
 		class="circle"
 		id="board"
-		style="background-color: rgba(255, 255, 0, {opacity});"
+		style="border-color: rgba(255, 255, 0, {opacity});"
 	>
 		RoomBoard
 	</div>
@@ -40,7 +40,7 @@
 			transition:scale
 			class="circle"
 			id="cube"
-			style="background-color: rgba(255, 0, 0, {opacity});"
+			style="border-color: rgba(255, 0, 0, {opacity});"
 		>
 			Cube
 		</div>
@@ -51,7 +51,7 @@
 			transition:scale
 			class="circle"
 			id="sigils"
-			style="background-color: rgba(0, 0, 255, {opacity});"
+			style="border-color: rgba(0, 0, 255, {opacity});"
 		>
 			Sigils
 		</div>
@@ -73,6 +73,9 @@
 
 	.circle {
 		position: absolute;
+		border: solid 20px;
+		box-sizing: border-box;
+		background-color: rgba(0, 0, 0, 0.8);
 		border-radius: 100%;
 		height: 40vh;
 		width: 40vh;
