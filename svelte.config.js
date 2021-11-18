@@ -6,7 +6,7 @@ import presetUno from '@unocss/preset-uno'
 import ViteFonts from 'vite-plugin-fonts'
 import AdapterStatic from "@sveltejs/adapter-static"
 
-const { BASE_PATH = "/" } = process.env;
+const { BASE_PATH = "" } = process.env;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

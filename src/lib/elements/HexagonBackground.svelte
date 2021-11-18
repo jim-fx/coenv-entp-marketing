@@ -37,6 +37,7 @@
 		pointer-events: none;
 		right: 0vw;
 		bottom: 0vw;
+		filter: blur(2px);
 		transform-origin: center center;
 		transition: transform 3s ease;
 		transform: perspective(80px)
