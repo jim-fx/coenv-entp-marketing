@@ -8,8 +8,6 @@
 
 		markers.forEach((m, i) => {
 			m.style = `--index:${i}`;
-			/* const b = m.getBoundingClientRect(); */
-			/* m.style.transformOrigin = `${b.x}px ${b.y}px`; */
 		});
 	}
 </script>
@@ -23,7 +21,7 @@
 	use:tagMarkers
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g id="04cologne 1" clip-path="url(#clip0_64_12132)">
+	<g id="04cologne 1">
 		<path
 			id="Vector"
 			fill-rule="evenodd"
@@ -700,11 +698,6 @@
 			/>
 		</g>
 	</g>
-	<defs>
-		<clipPath id="clip0_64_12132">
-			<rect width="2229.3" height="1781.5" fill="white" />
-		</clipPath>
-	</defs>
 </svg>
 
 <style>
@@ -733,7 +726,7 @@
 		opacity: 0;
 		transform-box: fill-box;
 		transform-origin: center bottom;
-		transition: transform 0.5s cubic-bezier(0, 1.28, 0.99, 1.25);
+		transition: transform 0.5s cubic-bezier(0, 1.28, 0.99, 1.25), opacity 0.5s ease;
 		transition-delay: calc(var(--index) * 100ms);
 		transform: scale(0);
 	}

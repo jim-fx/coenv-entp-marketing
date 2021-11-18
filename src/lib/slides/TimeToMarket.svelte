@@ -3,10 +3,10 @@
 </script>
 
 <div center>
-	<h1 text-4xl>Time-To-Market</h1>
-	<p text-2xl class:visible={step > 0}><b>2 Month</b> - First working prototyp</p>
-	<p text-2xl class:visible={step > 1}><b>5 Month</b> - Working with partners</p>
-	<p text-2xl class:visible={step > 2}><b>12 Month</b> - Product Launch</p>
+	<h1 text-8xl>Time-To-Market</h1>
+	<p text-4xl class:visible={step > 0}><b>2 Month</b> - First working prototyp</p>
+	<p text-4xl class:visible={step > 1}><b>5 Month</b> - Working with partners</p>
+	<p text-4xl class:visible={step > 2}><b>12 Month</b> - Product Launch</p>
 </div>
 
 <style>

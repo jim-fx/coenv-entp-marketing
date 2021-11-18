@@ -32,14 +32,14 @@
 
 <Slide title="%I Problem">
 	<div center box-border style="padding: 0px 20vh" transition:fade>
-		<h1>Shared spaces are amazing, but they come with some uncertainties</h1>
+		<h1 text-6xl>Shared spaces are amazing, but they come with some uncertainties</h1>
 		<h2 italic>Is this Room open for me? Can I use that table? Can I talk to that person?</h2>
 	</div>
 </Slide>
 
 <Slide title="%I What is CoEnv?">
 	<div center box-border style="padding: 0px 20vh" transition:fade>
-		<h1>CoEnv is an exploratory, modular ecosystem for shared environments,</h1>
+		<h1 text-6xl>CoEnv is an exploratory, modular ecosystem for shared environments,</h1>
 		<h2 italic>with a focus on the individual user's needs</h2>
 	</div>
 </Slide>
@@ -52,7 +52,7 @@
 
 <Slide title="%I Who is CoEnv for?">
 	<div center box-border style="padding: 0px 20vh" transition:fade>
-		<h1>Who is our customer?</h1>
+		<h1 text-6xl>Who is our customer?</h1>
 		<h2 italic>
 			Small to medium-sized shared spaces for example HackerSpaces, Social public Spaces and
 			Coworking Spaces
@@ -60,11 +60,11 @@
 	</div>
 </Slide>
 
-<Slide steps={2} let:step background={false}>
+<Slide steps={2} let:step background={false} title="%I Market - Megatrends">
 	<MegaTrends {step} />
 </Slide>
 
-<Slide>
+<Slide title="%I Market - Development I">
 	<div absolute top-5 left-5>
 		<h1 transition:fade>Amount of Coworking Spaces until 2020</h1>
 		<p>
@@ -76,7 +76,7 @@
 	<BarChart startYear={2005} prognoseAfterIndex="13" data={coworkingSpacesWorldWide} />
 </Slide>
 
-<Slide>
+<Slide title="%I Market - Development II">
 	<div absolute top-5 left-5>
 		<h1 transition:fade>Google Trends: Coworking</h1>
 		<p>Accessed 18. November 2021.</p>
@@ -85,15 +85,15 @@
 	<BarChart data={coworkingGoogleTrendGermany} />
 </Slide>
 
-<Slide steps={2} background={false} let:step>
+<Slide steps={2} background={false} let:step title="%I Customers - Potential">
 	<MapCologne {step} />
 </Slide>
 
-<Slide>
+<Slide title="%I Product - Price">
 	<div center>
 		<h1 text-8xl>Prices</h1>
 
-		<table text-2xl>
+		<table text-4xl font-light>
 			<thead font-bold>
 				<td>Product</td>
 				<td>Price</td>
@@ -122,7 +122,7 @@
 	</div>
 </Slide>
 
-<Slide steps={4} let:step>
+<Slide steps={4} let:step title="%I Product - TTM">
 	<TimeToMarket {step} />
 </Slide>
 

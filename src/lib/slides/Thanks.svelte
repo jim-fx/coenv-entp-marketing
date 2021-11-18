@@ -13,13 +13,25 @@
 
 <div center transition:fade>
 	<h1 transition:scale text-8xl>Thank you for <br /> your attention</h1>
-	{#each Array(20) as _, i}
-		<div class="wrapper" style="--index: {i}">
-			<div class="anim-wrapper">
-				<Hexagon --fill="none" --stroke="white" animated visibleDelay={i * 200} />
+	<a
+		text-2xl
+		color-white
+		mt-10
+		text-center
+		w-full
+		no-underline
+		href="https://github.com/jim-fx/CoEnv"
+		>For more information visit: <br /><b>github.com/jim-fx/CoEnv</b></a
+	>
+	<div class="-z-1" absolute w-full h-full style="filter: blur(2px)">
+		{#each Array(20) as _, i}
+			<div class="wrapper" style="--index: {i};">
+				<div class="anim-wrapper">
+					<Hexagon --fill="none" --stroke="white" animated visibleDelay={i * 200} />
+				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 </div>
 
 <style>

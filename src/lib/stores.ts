@@ -13,13 +13,29 @@ if (browser) {
   })
 }
 
+export const slideTime = writable(180);
+
 export const slideAmount = writable(0);
 
 export const showBackground = writable(true);
 
 export const slideTitle = writable("")
 
-export const nextSlide = () => slideIndex.update((index) => Math.min(get(slideAmount) - 1, index + 1));
+let timerInt;
+let startTime;
+function resetStartTimer() {
+  clearInterval(timerInt);
+  startTime = Date.now();
+  timerInt = setInterval(() => {
+    slideTime.set(Math.floor((Date.now() - startTime) / 1000))
+  }, 1000);
+}
+
+export const nextSlide = () => {
+  if (get(slideIndex) === 0) resetStartTimer();
+  if (get(slideIndex) === get(slideAmount) - 1) clearInterval(timerInt);
+  slideIndex.update((index) => Math.min(get(slideAmount) - 1, index + 1));
+};
 
 export const previousSlide = () => slideIndex.update((index) => Math.max(0, index - 1));
 

@@ -7,5 +7,8 @@ This is the repo for my presentation for the course entrepreneurial marketing at
 
 ## Presentation Notes
 
-1.268 Coworking Spaces Germany (Mai 2020);
+1.268 Coworking Spaces Germany (Mai 2020, Bundesverband Coworking) vs 800 im Jahr 2018
+
 139 Active Hackerspaces in Germany
+
+Bundesverband Coworking

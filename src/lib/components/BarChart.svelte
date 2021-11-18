@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import { quadInOut } from 'svelte/easing';
+	import { quartInOut } from 'svelte/easing';
 	import { humaneNumbers } from '$lib/helpers';
 
 	export const startYear = 2005;
@@ -11,7 +11,7 @@
 		return {
 			delay,
 			duration,
-			css: (t: number) => `transform-origin: 0 100%; transform: scaleY(${quadInOut(t)}); `
+			css: (t: number) => `transform-origin: 0 100%; transform: scaleY(${quartInOut(t)}); `
 		};
 	}
 
