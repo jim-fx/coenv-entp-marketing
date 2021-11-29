@@ -1,3 +1,12 @@
+<div align="center">
+
+<img src="static/favicon.svg" width="30%"/>
+
+<a href="https://jim-fx.github.io/entp_marketing_presentation/#0"><h2 align="center">CoEnv Marketing</h2></a>
+
+</div>
+
+
 # Presentation for Entrepreneurial Marketing
 
 This is the repo for my presentation for the course entrepreneurial marketing at code&context.
