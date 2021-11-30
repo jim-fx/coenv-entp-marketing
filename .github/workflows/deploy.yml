@@ -24,15 +24,9 @@ jobs:
           version: 6.0.2
           run_install: true
           
-      - name: Dump github context
-        run:   echo "$GITHUB_CONTEXT"
-        shell: bash
-        env:
-         GITHUB_CONTEXT: ${{ toJson(github) }}
-
       - run: "pnpm build"
         env:
-          BASE_PATH: ${{ github.event.repository.name }}
+          BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
