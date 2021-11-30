@@ -26,7 +26,7 @@ jobs:
 
       - run: "pnpm build"
         env:
-          BASE_PATH: /entp_marketing_presentation
+          BASE_PATH: ${{ github.event.repository.name }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
